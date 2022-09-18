@@ -81,7 +81,7 @@ body {
 }
 
 .pages {
-    background-color: blueviolet;
+    background-color: rgb(192, 155, 226);
     grid-template-rows: 1rem;
     height: 3rem;
     justify-content: center;
@@ -105,5 +105,46 @@ a {
 a:hover {
     background-color: #5d9c83;
 }
+
+@media only screen and (max-width: 700px){
+
+    .pages {
+        height: 300px;
+        
+    }
+    .pages .buttons{
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        width: 100px;
+        font-size: 15px;
+        
+    }
+
+    /*a {
+        height: 75px;
+        width: 100px;
+    
+    }*/
+
+    .countdown div{
+        font-size: 25px;
+    }
+
+    .countdown #minutes::before{
+        content: "Min";
+        font-size: .60em;
+    
+    }
+    .countdown #seconds::before{
+        content: "Sec";
+        font-size: .60em;
+    
+    }
+
+    .countdown h1{
+        font-size: 1.5em;
+    }
+
 
 
