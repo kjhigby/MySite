@@ -1,0 +1,49 @@
+body {
+    background-color: #CCC;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .choice {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 4rem;
+    transition: 100ms;
+  
+  }
+  .choice:hover {
+    transform: scale(1.2);
+  }
+  
+  .scores {
+    margin-top: 1.75rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  .scores-score {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .score-selection {
+    opacity: .5;
+  }
+  
+  .score-selection.winner {
+    opacity: 1;
+    font-size: 1.5rem;
+  }
+  
+  @media only screen and (max-width: 700px){
+  }
+

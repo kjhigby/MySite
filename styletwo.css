@@ -1,0 +1,85 @@
+body {
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(182, 182, 201);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    color: white;
+}
+.container {
+    display: flex;
+    height: 75vh;
+    width: 75vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball {
+    display: flex;
+    background-color: rgb(41, 37, 37);
+    background-image: linear-gradient(rgb(0, 0, 2), rgb(46, 25, 95));
+    height: 550px;
+    width: 550px;
+    border-radius: 50%;
+    box-shadow: 0px 4px rgba(0, 0, 0, .8);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    height: 275px;
+    width: 275px;
+    background-color: darkblue;
+    background-image: linear-gradient(rgb(59, 59, 235), rgb(142, 97, 247));
+    box-shadow: 4px 4px rgba(0, 0, 0, .5);
+    position: absolute;
+   
+    color: white;
+    font-size: 2.25rem;
+
+}
+
+#genie {
+     /*font-size: 185px;*/
+}
+
+.hide {
+
+    visibility: hidden;
+
+}
+
+@media only screen and (max-width: 700px){
+    .ball {
+        height: 300px;
+        width: 300px;
+        
+    }
+
+    .answer{
+        height: 150px;
+        width: 150px
+        
+    }
+
+    #genie {
+        font-size: 18px;
+    }
+
+
+}
